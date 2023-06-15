@@ -1,3 +1,5 @@
+package com.calendar;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -116,10 +118,6 @@ public class RegistrationInterface extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new RegistrationInterface().setVisible(true);
-            }
-        });
+        SwingUtilities.invokeLater(() -> new RegistrationInterface().setVisible(true));
     }
 }

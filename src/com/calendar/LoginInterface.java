@@ -1,3 +1,5 @@
+package com.calendar;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -95,10 +97,6 @@ public class LoginInterface extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new LoginInterface();
-            }
-        });
+        SwingUtilities.invokeLater(() -> new LoginInterface());
     }
 }
